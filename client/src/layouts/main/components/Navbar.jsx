@@ -65,7 +65,6 @@ const items = [
 const Navbar = () => {
   const [current, setCurrent] = useState('home');
   const onClick = (e) => {
-    console.log('click ', e);
     setCurrent(e.key);
   };
   return <Menu style={{position:"relative"}} onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items} />;
